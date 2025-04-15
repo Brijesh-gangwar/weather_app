@@ -10,14 +10,14 @@ import 'package:app/widgets/additional_info_item.dart';
 import 'dart:ui';
 import 'package:intl/intl.dart';
 
-class WeatherScreen extends StatefulWidget {
-  const WeatherScreen({super.key});
+class Weather1 extends StatefulWidget {
+  const Weather1({super.key});
 
   @override
-  State<WeatherScreen> createState() => _WeatherScreenState();
+  State<Weather1> createState() => _Weather1State();
 }
 
-class _WeatherScreenState extends State<WeatherScreen> {
+class _Weather1State extends State<Weather1> {
   String cityName = 'Ghaziabad';
 
   @override
@@ -88,6 +88,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       ),
                       const SizedBox(height: 10),
 
+
                       buildCurrentWeatherCard(tempC, sky),
 
                       const SizedBox(height: 20),
@@ -101,6 +102,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                       ),
                       const SizedBox(height: 10),
 
+
                       buildHourlyForecast(data),
 
                       const SizedBox(height: 30),
@@ -113,6 +115,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
                         ),
                       ),
                       const SizedBox(height: 20),
+
 
                       buildAdditionalInfo(
                         humidity: weather['main']['humidity'],
